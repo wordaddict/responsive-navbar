@@ -1,7 +1,9 @@
 document.getElementById("login").addEventListener("click", () => {
+    snackbarIn();
     showLogout();
 });
 document.getElementById("logout").addEventListener("click", () => {
+    snackbarOut();
     showLogIn();
 });
 
@@ -26,4 +28,16 @@ function showLogIn() {
   }  else {
     y.style.display = "block";
   }
+}
+
+function snackbarIn() {
+    var x = document.getElementById("snackbarin");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function snackbarOut() {
+    var x = document.getElementById("snackbarout");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
