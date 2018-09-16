@@ -15,6 +15,12 @@
     box-sizing: border-box;
     background-color: #83EDD9;
     list-style-type: none;
+    border: 5px solid #247BA0;
+    transition: border-color 0.5s ease-in 
+  }
+
+  .container > li:hover {
+    border-color: #FF1654;
   }
   
   html, body {
@@ -50,17 +56,3 @@
   .container > li {
     background-color: #83EDD9;
   }
-  
-  
-  /*.container > div:nth-child(2) {
-    background-color: #ff6f69;
-  }
-  
-  .container > div:nth-child(3) {
-    background-color: #88d8b0;
-  }
-  
-  .container > div:nth-child(4) {
-    background-color: #96ceb4;
-  }
-  */
